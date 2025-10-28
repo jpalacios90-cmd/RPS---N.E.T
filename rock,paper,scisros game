@@ -12,12 +12,17 @@ def computer_choice(enter):
 
 
 def player_choice():
-    choice=input("""Rock,Paper, Scisors
-    1)Rock
-    2)Paper
-    3)Scisors
-    """)
-    return choice
+    while True:
+        choice=input("""Rock,Paper, Scisors
+        1)Rock
+        2)Paper
+        3)Scisors
+        """)
+        if choice in ("1","2","3"):
+            return choice
+        else:
+            print("You need to enter a valid answer.")
+    
 
 
 def game_result(computer,choice,entries):
