@@ -1,4 +1,6 @@
 import random
+import Rock_Paper_Scissors_Player
+
 
 
 entrie={
@@ -28,6 +30,7 @@ def game_result(computer,choice,entries):
             print("You lose")
         elif computer== entries[3]:
             print("You win")
+            return True
         else:
             print("Draw")
 
@@ -36,6 +39,7 @@ def game_result(computer,choice,entries):
             print("You lose")
         elif computer== entries[1]:
             print("You win")
+            return True
         else:
             print("Draw")
 
@@ -44,14 +48,62 @@ def game_result(computer,choice,entries):
             print("You lose")
         elif computer== entries[2]:
             print("You win")
+            return True
         else:
             print("Draw")
 
-def main():
+def number_game():
+    while True:
+        number_of_game=input("How many game do you want to do?")
+        try:
+            number=int(number_of_game)
+            return number
+        except:
+            print("You must enter a number.")
+
+def continuer():
+    continuer=input("""Do you want to continue?
+    Enter 1 for Yes
+    2 for No""")
+    if continuer=="1":
+        return True
+    else:
+        return False
+
+def flow_of_game(wins,loses):
     player=player_choice()
     computer=computer_choice()
     print("computer choice is",computer)
     game_result(computer,player,entrie)
+    if game_result:
+        wins+=1
+    elif game_result==False:
+        loses+=1
+    return wins,loses
 
+
+
+
+def main():
+    player_info= Rock_Paper_Scissors_Player.player_info()
+    games_to_play=number_game()
+
+
+    wins=0
+    loses=0
+
+    while True:
+        for game in range(games_to_play): 
+
+            flow_of_game(wins,loses)
+
+        if continuer():
+            games_to_play=number_game()
+        else:
+            break
+    wins,loses=flow_of_game(wins,loses)
+    player_info["win"]=wins
+    player_info["lose"]=loses
+    print(player_info)
 
 main()
