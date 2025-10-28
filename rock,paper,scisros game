@@ -28,33 +28,41 @@ def game_result(computer,choice,entries):
     if choice=="1" or choice== "rock":
         if computer==entries[2]:
             print("You lose")
+            return False
         elif computer== entries[3]:
             print("You win")
             return True
         else:
             print("Draw")
+            return None
 
     elif choice=="2" or choice== "paper":
         if computer==entries[3]:
             print("You lose")
+            return False
         elif computer== entries[1]:
             print("You win")
             return True
         else:
             print("Draw")
+            return None
 
     elif choice=="3" or choice== "scisor":
         if computer==entries[1]:
             print("You lose")
+            return False
         elif computer== entries[2]:
             print("You win")
             return True
         else:
             print("Draw")
+            return None
+
 
 def number_game():
     while True:
-        number_of_game=input("How many game do you want to do?")
+        number_of_game=input("How many game do you want to do?  ")
+        print()
         try:
             number=int(number_of_game)
             return number
@@ -62,24 +70,28 @@ def number_game():
             print("You must enter a number.")
 
 def continuer():
-    continuer=input("""Do you want to continue?
+    print("""Do you want to continue?
     Enter 1 for Yes
-    2 for No""")
+    2 for No """)
+    continuer=input()
     if continuer=="1":
         return True
     else:
         return False
 
-def flow_of_game(wins,loses):
+def flow_of_game(player_info):
     player=player_choice()
     computer=computer_choice()
     print("computer choice is",computer)
-    game_result(computer,player,entrie)
-    if game_result:
-        wins+=1
-    elif game_result==False:
-        loses+=1
-    return wins,loses
+    verify=game_result(computer,player,entrie)
+    print()
+    if verify==True:
+        player_info["win"]+=1
+    elif verify==False:
+        player_info["lose"]+=1    
+    elif verify==None:
+        player_info["drawn"]+=1
+    return player_info
 
 
 
@@ -88,23 +100,19 @@ def main():
     player_info= Rock_Paper_Scissors_Player.player_info()
     games_to_play=number_game()
 
-
-    wins=0
-    loses=0
-
     while True:
         for game in range(games_to_play): 
 
-            wins,loses=flow_of_game(wins,loses)
+            flow_of_game(player_info)
 
         if continuer():
             games_to_play=number_game()
         else:
             break
     
-    
-    player_info["win"]=wins
-    player_info["lose"]=loses
-    print(player_info)
+
+    print("You have won:",player_info["win"])
+    print("You have lost:",player_info["lose"])
+    print("You have drawn:",player_info["drawn"])
 
 main()

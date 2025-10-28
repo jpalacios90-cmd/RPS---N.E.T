@@ -9,15 +9,6 @@ def player_info():
             print("Okay, let's try again.")
         else:
             print("Please answer 'y' or 'n'.")
+        print()
 
-    return {"name": name, "win": 0, "lose": 0}
-
-def main():
-    player = player_info()
-    print(f"Player info: {player}")
-
-main()
-player = player_info()
-
-player["win"]=5
-print(player)
+    return {"name": name, "win": 0, "lose": 0,"drawn":0}
