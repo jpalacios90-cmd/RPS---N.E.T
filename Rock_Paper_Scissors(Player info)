@@ -1,4 +1,4 @@
-Rock_Paper_Scissors.py
+#Rock_Paper_Scissors.py
 def player_info():
     while True:
         name = input("player name: ").strip()
