@@ -95,13 +95,14 @@ def main():
     while True:
         for game in range(games_to_play): 
 
-            flow_of_game(wins,loses)
+            wins,loses=flow_of_game(wins,loses)
 
         if continuer():
             games_to_play=number_game()
         else:
             break
-    wins,loses=flow_of_game(wins,loses)
+    
+    
     player_info["win"]=wins
     player_info["lose"]=loses
     print(player_info)
