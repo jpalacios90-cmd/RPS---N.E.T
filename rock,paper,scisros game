@@ -1,24 +1,28 @@
 import random
+import Rock_Paper_Scissors_Player
 
 
-entrie={
-        1:"Rock",
-        2: "Paper",
-        3:"Scisors"}
 
-def computer_choice():    
 
-    computer=entrie[random.randint(1,3)]
+
+def computer_choice(enter):    
+
+    computer=enter[random.randint(1,3)]
     return computer
 
 
 def player_choice():
-    choice=input("""Rock,Paper, Scisors
-    1)Rock
-    2)Paper
-    3)Scisors
-    """)
-    return choice
+    while True:
+        choice=input("""Rock,Paper, Scisors
+        1)Rock
+        2)Paper
+        3)Scisors
+        """)
+        if choice in ("1","2","3"):
+            return choice
+        else:
+            print("You need to enter a valid answer.")
+    
 
 
 def game_result(computer,choice,entries):
@@ -26,32 +30,95 @@ def game_result(computer,choice,entries):
     if choice=="1" or choice== "rock":
         if computer==entries[2]:
             print("You lose")
+            return False
         elif computer== entries[3]:
             print("You win")
+            return True
         else:
             print("Draw")
+            return None
 
     elif choice=="2" or choice== "paper":
         if computer==entries[3]:
             print("You lose")
+            return False
         elif computer== entries[1]:
             print("You win")
+            return True
         else:
             print("Draw")
+            return None
 
     elif choice=="3" or choice== "scisor":
         if computer==entries[1]:
             print("You lose")
+            return False
         elif computer== entries[2]:
             print("You win")
+            return True
         else:
             print("Draw")
+            return None
+
+
+def number_game():
+    while True:
+        number_of_game=input("How many game do you want to do?  ")
+        print()
+        try:
+            number=int(number_of_game)
+            return number
+        except:
+            print("You must enter a number.")
+
+def continuer():
+    print("""Do you want to continue?
+    Enter 1 for Yes
+    2 for No """)
+    continuer=input()
+    if continuer=="1":
+        return True
+    else:
+        return False
+
+def flow_of_game(player_info,enter):
+    player=player_choice()
+    computer=computer_choice(enter)
+    print("computer choice is",computer)
+    verify=game_result(computer,player,enter)
+    print()
+    if verify==True:
+        player_info["win"]+=1
+    elif verify==False:
+        player_info["lose"]+=1    
+    elif verify==None:
+        player_info["drawn"]+=1
+    return player_info
+
+
+
 
 def main():
-    player=player_choice()
-    computer=computer_choice()
-    print("computer choice is",computer)
-    game_result(computer,player,entrie)
+    entrie={
+        1:"Rock",
+        2: "Paper",
+        3:"Scisors"}
+    player_info= Rock_Paper_Scissors_Player.player_info()
+    games_to_play=number_game()
 
+    while True:
+        for game in range(games_to_play): 
+
+            flow_of_game(player_info,entrie)
+
+        if continuer():
+            games_to_play=number_game()
+        else:
+            break
+    
+
+    print("You have won:",player_info["win"])
+    print("You have lost:",player_info["lose"])
+    print("You have drawn:",player_info["drawn"])
 
 main()
