@@ -12,3 +12,32 @@ def player_info():
         print()
 
     return {"name": name, "win": 0, "lose": 0,"drawn":0}
+
+
+
+
+def save_game(player):
+    with open("Player_info_Save.txt","a") as file:        
+        file.write(f"{player}")
+        file.write("\n")
+        # file.seek(1000)
+
+
+    with open("Player_info_Save.txt","r") as file:
+        redact=file.read()
+        return redact
+
+
+
+
+def t():
+    files=save_game()
+
+    print(files)
+
+
+
+    if "irt" in files:
+        print("gotcha")
+    else:
+        print("missing")
