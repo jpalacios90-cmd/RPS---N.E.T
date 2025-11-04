@@ -3,7 +3,7 @@ This code excutes a game of rock paper scissors.
 
 # Here is a list of what to enter(detailed):
 1. Your name
-   a. Confirmation of if it's your name (y,n)
+   1a. Confirmation of if it's your name (y,n)
 2. Enter the number of games you want to play.
 3. You have these choices to enter:
      a. 1) Rock
