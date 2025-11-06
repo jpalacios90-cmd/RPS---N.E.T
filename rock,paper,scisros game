@@ -100,17 +100,18 @@ def main():
         1:"Rock",
         2: "Paper",
         3:"Scisors"}
+    player_list=Rock_Paper_Scissors_Player.create_player_list()
     player_info= Rock_Paper_Scissors_Player.player_info()
 
-    Rock_Paper_Scissors_Player.save_game(player_info)
-    with open("Player_info_Save.txt","r") as save_info:
-        Player_info_Save=save_info.read()
-    if player_info["name"] in Player_info_Save:
-        print("gotcha")
-    else:
-        print("Missing")
+    player_present=Rock_Paper_Scissors_Player.find_the_player(player_info["name"],player_list)
 
-        
+    # Rock_Paper_Scissors_Player.save_game(player_info)
+    if player_present==None:
+        Rock_Paper_Scissors_Player.save_game(player_info)
+    else:
+        player_info= dict(player_present)
+    print(type(player_info),player_info)
+
     games_to_play=number_game()
 
     while True:
@@ -132,3 +133,12 @@ def main():
 
 
 main()
+'''
+    with open("Player_info_Save.txt","r") as save_info:
+        Player_info_Save=save_info.read()
+        
+    if player_info["name"] in Player_info_Save:
+        print("gotcha")
+    else:
+        print("Missing")
+'''
