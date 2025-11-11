@@ -11,7 +11,7 @@ This project demonstrates our understanding of Python programming so far. We'd l
 1. Install the code
 2. Open it with either Visual Studio Code or Idle in python
 
-To install our game click the link bellow!
+To install our game click the link!
 [!!Click here!!](https://github.com/user-attachments/files/23466938/Rock_Paper_Scissors_game.py)
 
 Get ready to play and track your results!
