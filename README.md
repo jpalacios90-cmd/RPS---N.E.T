@@ -1,26 +1,54 @@
 # Rock_Paper_Scissors---N.E.T
-This code excutes a game of rock paper scissors.
+🎮 About Us
 
-# Here is a list of what to enter(detailed):
-1. Your name
-2. **a. Confirmation of if it's your name (y,n)**
-3. Enter the number of games you want to play.
-4. You have these choices to enter:
-5. **a. 1) Rock**
-6. **b. 2) Paper**
-7. **c. 3) Scissors**
-8. **d. Any other number besides 1, 2, or 3 will be invalid.**
-9. Enter any of the choices above.
-10. **a. The program enters a random choice.**
-11. Repeat step 3 until you've reach the number of games you entered in step 2.
-12. A prompt will come up to ask wheter you'd like to continue
-13. **a. If 1(yes): Will restart to step 2**
-14. **b. If 2(no): Game will end**
-15. Results will be stated when the game has ended.
+Welcome to N.E.T, the creative minds behind this fun and interactive Rock, Paper, Scissors game!
+Our group developed this project to combine coding fundamentals with a classic, easy-to-play game. We wanted to design something that’s simple, engaging, and a great example of teamwork in action.
 
-# Here is a list of what to enter(simplified):
-1. Enter your name
-2. Enter the number of games you want to play
-3. Enter 1(Rock), 2(Paper), or 3(Scissors)
-4. Put 1 to continue game or 2 to end the game
-5. Results are psoted at the end
+This project demonstrates our understanding of Python programming so far. We'd like you to install this program and either play it or break it! If you do break it please lets us know how we can improve to fix this error.
+⚙️ How to Install
+
+To install our game click the link bellow!
+[!!Click here!!](https://github.com/user-attachments/files/23466740/rock.paper.scisros.game.txt)]
+
+Get ready to play and track your results!
+
+🪨📄✂️ Game Overview
+
+Our Rock, Paper, Scissors game pits you against the computer in a friendly match of logic and luck!
+Here’s what makes it awesome:
+
+🧠 Smart Design
+
+The computer’s move is randomly generated using Python’s random module.
+
+Your choices are validated so you can’t accidentally break the game.
+
+🔁 Replayable Fun
+
+Choose how many rounds to play.
+
+Decide whether to keep going after each set.
+
+Your wins, losses, and draws are automatically tracked.
+
+🧩 Modular Setup
+
+The game uses clean, reusable functions.
+
+The Rock_Paper_Scissors_Player module keeps your game data organized.
+
+It even includes safeguards to handle keyboard interruptions or unexpected inputs gracefully.
+
+🎯 End of Game
+
+At the end, the game proudly displays your overall record — how many times you won, lost, or tied against the computer.
+
+🚀 Why You’ll Love It
+
+Simple to install, easy to play.
+
+Interactive and replayable.
+
+A great example of teamwork, coding structure, and Python fundamentals in action.
+
+Perfect for demonstrating programming logic in a fun, familiar format.
