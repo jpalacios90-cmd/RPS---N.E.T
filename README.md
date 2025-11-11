@@ -5,10 +5,11 @@ Welcome to N.E.T, the creative minds behind this fun and interactive Rock, Paper
 Our group developed this project to combine coding fundamentals with a classic, easy-to-play game. We wanted to design something that’s simple, engaging, and a great example of teamwork in action.
 
 This project demonstrates our understanding of Python programming so far. We'd like you to install this program and either play it or break it! If you do break it please lets us know how we can improve to fix this error.
+
 ⚙️ How to Install
 
 To install our game click the link bellow!
-[!!Click here!!](https://github.com/user-attachments/files/23466740/rock.paper.scisros.game.txt)]
+[!!Click here!!](https://github.com/user-attachments/files/23466740/rock.paper.scisros.game.txt)
 
 Get ready to play and track your results!
 
