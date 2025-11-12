@@ -4,7 +4,7 @@
 Welcome to N.E.T, the creative minds behind this fun and interactive Rock, Paper, Scissors game!
 Our group developed this project to combine coding fundamentals with a classic, easy-to-play game. We wanted to design something that’s simple, engaging, and a great example of teamwork in action.
 
-This project demonstrates our understanding of Python programming so far. We'd like you to install this program and either play it or break it! If you do break it please lets us know how we can improve to fix this error.
+Experience the results of our Python journey! Download, play, and push this program to its limits. Whether you win, lose, or break it, your feedback helps us make it stronger!
 
 ⚙️ How to Install
 
