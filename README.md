@@ -19,6 +19,8 @@ Base game: [Download](https://github.com/user-attachments/files/23466938/Rock_Pa
 
 Player Info(Needed to run base game): [Download](https://github.com/user-attachments/files/23513306/Rock_Paper_Scissors_Player.py)
 
+Place these files in the same folder and enjoy.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 🪨📄✂️ Game Overview
@@ -53,6 +55,8 @@ The game uses clean, reusable functions.
 The Rock_Paper_Scissors_Player module keeps your game data organized.
 
 It even includes safeguards to handle keyboard interruptions or unexpected inputs gracefully.
+
+It also save your latest game that you can view or share as a text file.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
