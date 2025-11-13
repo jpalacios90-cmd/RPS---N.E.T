@@ -12,8 +12,8 @@ Experience the results of our Python journey! Download, play, and push this prog
 2. Open it with either Visual Studio Code or Idle in python
 
 To install our game you will need to download two files.
-Base game: [Base game](https://github.com/user-attachments/files/23466938/Rock_Paper_Scissors_game.py)
-Player Info(Needed to run): [Player Info](https://github.com/user-attachments/files/23513306/Rock_Paper_Scissors_Player.py)
+Base game: [Download](https://github.com/user-attachments/files/23466938/Rock_Paper_Scissors_game.py)
+EPlayer Info: [Download](https://github.com/user-attachments/files/23513306/Rock_Paper_Scissors_Player.py)
 
 
 Get ready to play and track your results!
