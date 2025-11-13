@@ -12,3 +12,34 @@ def player_info():
         print()
 
     return {"name": name, "win": 0, "lose": 0,"drawn":0}
+
+
+def new_save(player):
+    with open("Player_info_Save.txt","w") as file: 
+        for element in player:
+            file.write("\n")       
+            file.write(f"{element}")
+        
+
+def save_game(player):
+    with open("Player_info_Save.txt","a") as file: 
+        file.write("\n")       
+        file.write(f"{player}")
+
+
+def create_player_list():
+    new_list=[]
+    with open("Player_info_Save.txt","r") as file:
+        for line in file:
+            new_list.append(line)
+    return new_list
+
+# new_list=create_player_list()
+
+def find_the_player(player,new_list):
+    for elements in new_list:
+        if player in elements:
+
+            saved_player_info=elements
+            return saved_player_info
+
