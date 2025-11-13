@@ -1,4 +1,0 @@
-
-New Game
-{'name': 'sffsa', 'win': 1, 'lose': 1, 'drawn': 1}
-{'name': 'ye', 'win': 3, 'lose': 1, 'drawn': 1}
