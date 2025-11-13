@@ -1,7 +1,7 @@
 # Rock_Paper_Scissors---N.E.T
 🎮 About Us
 
-Welcome to N.E.T(Nuro Engineers of tech), the creative minds behind this fun and interactive Rock, Paper, Scissors game!
+Welcome to N.E.T(Neuro Engineers of tech), the creative minds behind this fun and interactive Rock, Paper, Scissors game!
 Our group developed this project to combine coding fundamentals with a classic, easy-to-play game. We wanted to design something that’s simple, engaging, and a great example of teamwork in action.
 
 Experience the results of our Python journey! Download, play, and push this program to its limits. Whether you win, lose, or break it, your feedback helps us make it stronger!
