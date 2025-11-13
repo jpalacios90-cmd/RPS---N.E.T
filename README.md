@@ -17,9 +17,6 @@ Base game: [Download](https://github.com/user-attachments/files/23466938/Rock_Pa
 
 Player Info(Needed to run base game): [Download](https://github.com/user-attachments/files/23513306/Rock_Paper_Scissors_Player.py)
 
-
-Get ready to play and track your results!
-
 🪨📄✂️ Game Overview
 
 Our Rock, Paper, Scissors game pits you against the computer in a friendly match of logic and luck!
