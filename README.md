@@ -10,8 +10,9 @@ Experience the results of our Python journey! Download, play, and push this prog
 
 ⚙️ How to Install
 
-1. Install the code
-2. Open it with either Visual Studio Code or Idle in python
+1. Install Python
+2. Install the code
+3. Open it with either Visual Studio Code or Idle in python
 
 To install our game you will need to download two files:
 
