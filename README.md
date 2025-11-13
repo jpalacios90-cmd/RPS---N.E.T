@@ -56,7 +56,9 @@ The Rock_Paper_Scissors_Player module keeps your game data organized.
 
 It even includes safeguards to handle keyboard interruptions or unexpected inputs gracefully.
 
-It also save your latest game that you can view or share as a text file.
+It also save your latest game in a text file that you can share or delete to begin anew.
+
+As long as you have this file all of your game will be saved.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
