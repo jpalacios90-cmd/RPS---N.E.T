@@ -1,7 +1,4 @@
-{'name': 'name', 'win': 0, 'lose': 0, 'drawn': 0}
-{'name': 'car', 'win': 0, 'lose': 0, 'drawn': 0}
-{'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0}
-{'name': 'tom', 'win': 0, 'lose': 0, 'drawn': 0}
-{'name': 'jerry', 'win': 0, 'lose': 0, 'drawn': 0}
-{'name': 'mat', 'win': 0, 'lose': 0, 'drawn': 0}
-{'name': 'fid', 'win': 0, 'lose': 0, 'drawn': 0}
+
+fsjklfs 3 0 1 
+fsf, 4, 0 ,2 
+sfsfsf 1 2 3 

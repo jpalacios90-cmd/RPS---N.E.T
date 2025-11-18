@@ -100,17 +100,40 @@ def main():
         1:"Rock",
         2: "Paper",
         3:"Scisors"}
+    try:
+        with open("Player_info_Save.txt","r") as file:
+            pass
+    except FileNotFoundError:
+        Rock_Paper_Scissors_Player.save_game("New Game")
+
+
+
+
+
+
     player_list=Rock_Paper_Scissors_Player.create_player_list()
+
     player_info= Rock_Paper_Scissors_Player.player_info()
 
-    player_present=Rock_Paper_Scissors_Player.find_the_player(player_info["name"],player_list)
-
-    # Rock_Paper_Scissors_Player.save_game(player_info)
-    if player_present==None:
-        Rock_Paper_Scissors_Player.save_game(player_info)
+    found_player=Rock_Paper_Scissors_Player.find_the_player(player_info["name"],player_list)
+    print(found_player)
+    if found_player:
+        for elment in found_player:
+            print(elment)
+            # saving=[].append(elment)
+        saving=list(found_player)
+        print(saving,type(saving))
+        player_info={'name': saving[0], 'win': int(saving[1]), 'lose': int(saving[2]), 'drawn': int(saving[3])}
+    
+        print("welcome back ")
     else:
-        player_info= dict(player_present)
-    print(type(player_info),player_info)
+        print("welcome to your first game")
+    
+
+
+
+
+
 
     games_to_play=number_game()
 
@@ -124,21 +147,11 @@ def main():
         else:
             break
     
-
     print("You have won:",player_info["win"])
     print("You have lost:",player_info["lose"])
     print("You have drawn:",player_info["drawn"])
 
-
-
+    
+    Rock_Paper_Scissors_Player.save_game(saving)
 
 main()
-'''
-    with open("Player_info_Save.txt","r") as save_info:
-        Player_info_Save=save_info.read()
-        
-    if player_info["name"] in Player_info_Save:
-        print("gotcha")
-    else:
-        print("Missing")
-'''

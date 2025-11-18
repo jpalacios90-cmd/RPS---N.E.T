@@ -13,35 +13,20 @@ def player_info():
 
     return {"name": name, "win": 0, "lose": 0,"drawn":0}
 
-
+'''
 def new_save(player):
     with open("Player_info_Save.txt","w") as file: 
         for element in player:
             file.write("\n")       
             file.write(f"{element}")
-        
+'''        
 
 def save_game(player):
     with open("Player_info_Save.txt","a") as file: 
-        file.write("\n")       
-        file.write(f"{player}")
-'''
-    with open("Player_info_Save.txt","r") as file:
+        file.write("\n")
+        for element in player:       
+            file.write(f"{element} ")
 
-        redact=file.read()
-        return redact'''
-
-def t():
-    files=save_game()
-
-    print(files)
-
-
-
-    if "irt" in files:
-        print("gotcha")
-    else:
-        print("missing")
 
 
 def create_player_list():
@@ -57,42 +42,45 @@ new_list=create_player_list()
 def find_the_player(player,new_list):
     for elements in new_list:
         if player in elements:
-            print("c")
-            print(elements, new_list.index(elements))
+            #print(elements, new_list.index(elements))
             saved_player_info=elements
             return saved_player_info
-            
-        else:
-            print("d")
+
     
 
 
-j=str(find_the_player("josh",new_list))
+# j=str(find_the_player("josh",new_list))
 
 
-l=str({'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0})
-k=str({'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0})
+# l=str({'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0})
+k={'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0}
 
 
-print(type(j))
+# print(type(j))
 
-h=str({'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0})
-print(h)
+# h=str({'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0})
+# print(h)
 
-if j==k:
-    print("g")
-else:
-    print("d")
+# if j==k:
+#     print("g")
+# else:
+#     print("d")
 
-mj="{'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0}"
+# mj="{'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0}"
 
-if l==k:
-    print("Gsh")
-
-
-mj=h.removeprefix("{").removesuffix("}")
-# mj=mj.strip("{")
+# if l==k:
+#     print("Gsh")
 
 
-print(mj)
-dict(mj)
+j="['sdfgd', 13, 14, 22]"
+h=j.split()
+# print(h,type(h))
+# print(type(h[1]))
+# int(h[1])
+# m=k.values()
+
+# g=list(m)
+# print(g)
+l=find_the_player("fsf",new_list)
+
+print(type(l))
