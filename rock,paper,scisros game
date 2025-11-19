@@ -115,17 +115,16 @@ def main():
 
     player_info= Rock_Paper_Scissors_Player.player_info()
 
-    found_player=Rock_Paper_Scissors_Player.find_the_player(player_info["name"],player_list)
-    print(found_player)
+    found_player=Rock_Paper_Scissors_Player.get_player(player_info["name"])
+
     if found_player:
-        for elment in found_player:
-            print(elment)
-            # saving=[].append(elment)
-        saving=list(found_player)
-        print(saving,type(saving))
+        # for elment in found_player:
+        #     print(elment)
+        #     # saving=[].append(elment)
+        saving=found_player.split()
         player_info={'name': saving[0], 'win': int(saving[1]), 'lose': int(saving[2]), 'drawn': int(saving[3])}
     
-        print("welcome back ")
+        print("welcome back ",player_info)
     else:
         print("welcome to your first game")
     
@@ -152,6 +151,6 @@ def main():
     print("You have drawn:",player_info["drawn"])
 
     
-    Rock_Paper_Scissors_Player.save_game(saving)
+    Rock_Paper_Scissors_Player.save_game(player_info.values())
 
 main()

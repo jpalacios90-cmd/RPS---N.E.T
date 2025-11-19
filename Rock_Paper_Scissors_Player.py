@@ -39,15 +39,19 @@ def create_player_list():
 
 new_list=create_player_list()
 
-def find_the_player(player,new_list):
-    for elements in new_list:
-        if player in elements:
-            #print(elements, new_list.index(elements))
-            saved_player_info=elements
-            return saved_player_info
+# def find_the_player(player,new_list):
+#     for elements in new_list:
+#         if player in elements:
+#             #print(elements, new_list.index(elements))
+#             saved_player_info=elements
+#             return saved_player_info
 
     
-
+def get_player(player):    
+    with open("Player_info_Save.txt","r") as file:
+        for line in file:
+            if player+" " in line:
+                return line
 
 # j=str(find_the_player("josh",new_list))
 
@@ -81,6 +85,16 @@ h=j.split()
 
 # g=list(m)
 # print(g)
-l=find_the_player("fsf",new_list)
+# l=find_the_player("fsf",new_list)
+# ks=str(l)
+# m=ks.split()
+# for elme in m:
+#     print(elme)
 
-print(type(l))
+# l=get_player_list("fsf")
+# # ks=str(l)
+# # m=ks.split()
+# # for elme in m:
+# #     print(elme)
+# g=l.split()
+# print(g)
