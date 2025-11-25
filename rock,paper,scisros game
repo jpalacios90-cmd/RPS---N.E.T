@@ -124,7 +124,7 @@ def main():
         saving=found_player.split()
         player_info={'name': saving[0], 'win': int(saving[1]), 'lose': int(saving[2]), 'drawn': int(saving[3])}
     
-        print("welcome back ",player_info)
+        print("welcome back ")
     else:
         print("welcome to your first game")
     

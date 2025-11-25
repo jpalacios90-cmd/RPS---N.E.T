@@ -23,10 +23,10 @@ def new_save(player):
 
 def save_game(player):
     with open("Player_info_Save.txt","a") as file: 
-        file.write("\n")
+        # file.write("\n")
         for element in player:       
             file.write(f"{element} ")
-
+        file.write("\n")
 
 
 def create_player_list():
@@ -37,7 +37,7 @@ def create_player_list():
     return new_list
 
 
-new_list=create_player_list()
+# new_list=create_player_list()
 
 # def find_the_player(player,new_list):
 #     for elements in new_list:
@@ -50,14 +50,14 @@ new_list=create_player_list()
 def get_player(player):    
     with open("Player_info_Save.txt","r") as file:
         for line in file:
-            if player+" " in line:
+            found_player=line.split()
+            if player==found_player[0]:
                 return line
 
 # j=str(find_the_player("josh",new_list))
 
 
 # l=str({'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0})
-k={'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0}
 
 
 # print(type(j))
@@ -76,8 +76,8 @@ k={'name': 'josh', 'win': 0, 'lose': 0, 'drawn': 0}
 #     print("Gsh")
 
 
-j="['sdfgd', 13, 14, 22]"
-h=j.split()
+# j="sdfgd, 13, 14, 22"
+# h=j.split(",")
 # print(h,type(h))
 # print(type(h[1]))
 # int(h[1])
@@ -98,3 +98,4 @@ h=j.split()
 # #     print(elme)
 # g=l.split()
 # print(g)
+
