@@ -1,0 +1,5 @@
+
+New Game
+{'name': 'fs', 'win': 1, 'lose': 1, 'drawn': 3}
+{'name': 'fs', 'win': 0, 'lose': 2, 'drawn': 2}
+{'name': 'rt', 'win': 2, 'lose': 2, 'drawn': 1}
