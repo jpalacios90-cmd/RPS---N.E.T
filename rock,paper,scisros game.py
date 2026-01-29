@@ -155,7 +155,7 @@ def main():
     player_list=Rock_Paper_Scissors_Player.create_player_list()
     player_info= Rock_Paper_Scissors_Player.player_info()
 
-    Rock_Paper_Scissors_Player.find_the_player(player_info["name"],player_list)
+    Rock_Paper_Scissors_Player.get_player(player_info["name"])
 
     deroulement=Flow(player_info,entrie)
 
@@ -166,7 +166,9 @@ def main():
     print("You have won:",player_info["win"])
     print("You have lost:",player_info["lose"])
     print("You have drawn:",player_info["drawn"])
-    Rock_Paper_Scissors_Player.save_game(player_info)
+    Rock_Paper_Scissors_Player.save_game(player_info.values())
+
+
 
 def main2():
     try:
