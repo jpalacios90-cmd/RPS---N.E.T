@@ -1,10 +1,6 @@
 import random
 import Rock_Paper_Scissors_Player
 
-
-
-
-
 def computer_choice(enter):    
 
     computer=enter[random.randint(1,3)]
