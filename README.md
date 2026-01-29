@@ -18,7 +18,7 @@ To install our game you will need to download two files:
 
 Base game: [Download](https://github.com/user-attachments/files/23466938/Rock_Paper_Scissors_game.py)
 
-Player Info(Needed to run base game): [Download]([https://github.com/user-attachments/files/23513306/Rock_Paper_Scissors_Player.py](https://github.com/jpalacios90-cmd/RPS---N.E.T/raw/refs/heads/main/Rock_Paper_Scissors_Player.py))
+Player Info(Needed to run base game): [Download]([https://github.com/user-attachments/files/23513306/Rock_Paper_Scissors_Player.py])
 
 Place these files in the same folder and enjoy.
 
